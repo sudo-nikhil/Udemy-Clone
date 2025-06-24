@@ -20,6 +20,7 @@ body{
     top: 0px;
     background-color: white;
     margin-top: 0;
+    z-index: 1;
 }
 
 .navbar__s1__title{
@@ -90,10 +91,45 @@ body{
 }
 
 .sales-image{
-    display: flex;
-    justify-content: center;
-    padding: 0px;
+    position: relative;
     
+}
+
+.sales-image__offer{
+    width: 26%;
+    border: solid black 2px;
+    padding: 2%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: white;
+}
+
+
+/* mylearning popup */
+
+.mylearning__popup{
+    position: absolute;
+    border: solid black 1px;
+    width: 100px;
+    padding: 20px;
+    background-color: white;
+    top: 150%;
+    right: 0px;
+    display: none;
+}
+
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.menubar{
+    display: none;
 }
 
 /* Recommended section styling */
