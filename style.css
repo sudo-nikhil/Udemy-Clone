@@ -74,13 +74,15 @@ body{
     padding: 10px;
     border-radius: 30px;
     color: white;
+    cursor: pointer;
+    border: 1px solid #A435F0;
 }
 
 .categories p:hover{
-    background-color: white;
+    background-color: transparent;
     color: #000000;
     border: 1px solid #A435F0;
-    cursor: pointer;
+    transition: 1s;
 
 }
 
@@ -103,8 +105,23 @@ body{
     top: 20%;
     left: 10%;
     background-color: white;
+    animation-name: zoom ;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 /* mylearning popup */
 
